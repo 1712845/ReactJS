@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Thư viên để thông dịch JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type = 'text/babel'>
+        // const Title = React.createElement('div',{
+        //     className: 'title'
+        // }, 'Đây là title');
+        const Title = <div class = "title">Đây là title</div>
+        const Image = React.createElement('img',{
+            src: '1.jpg'
+        });
+        const App = React.createElement('div',null,Title,Image);
+        ReactDOM.render(App,root);
+    </script>
+</body>
+</html>
